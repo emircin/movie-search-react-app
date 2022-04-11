@@ -7,10 +7,10 @@ const Main = () => {
 
   const { setSearchQuery, getMovie, searchQuery, user } = useContext(MovieContext)
 
-  const onChange = (e) => {
+  const onChange = async (e) => {
 
-    setSearchQuery(e.target.value)
-    user ? getMovie(searchQuery) : alert("You Must Login")
+    await setSearchQuery(e.target.value)
+    await user ? getMovie(searchQuery) : alert("You Must Login")
 
   }
 

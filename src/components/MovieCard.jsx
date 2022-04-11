@@ -7,7 +7,7 @@ import MovieDetail from '../pages/MovieDetail'
 const MovieCard = () => {
 
   const { pullMovie, user } = useContext(MovieContext)
-  console.log(pullMovie)
+
 
   return (
     

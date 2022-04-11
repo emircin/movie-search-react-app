@@ -17,12 +17,16 @@ export const MovieProvider = (props) => {
 
     useEffect(() => {
 
-        getMovie("fight")
+    
+        fetch('https://api.themoviedb.org/3/discover/movie?api_key=b84f24a93ab3e28fa8f358f6360cf1d4')
+            .then(response => response.json())
+            .then(data => setPullMovie(data.results))
+            console.log(pullMovie)
 
-        auth.onAuthStateChanged((authUser)=>{
+        auth.onAuthStateChanged((authUser) => {
 
             authUser ? setUser(authUser) : setUser(null)
-            
+
         })
 
     }, []);
