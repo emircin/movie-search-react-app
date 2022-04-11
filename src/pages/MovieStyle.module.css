@@ -1,0 +1,9 @@
+.detailContainer{
+    position: absolute;
+    bottom: 0;
+    background-color: aliceblue;
+    padding: 1rem;
+    max-height: 200px;
+    overflow: auto;
+
+}

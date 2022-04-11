@@ -1,0 +1,16 @@
+.search-container{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.search-movie{
+    padding: 0.2rem;
+    width: 20%;
+    border-radius: 3px;
+    border: none;
+    font-size: 1rem;
+}
+.search-movie:focus{
+    outline: none;
+}

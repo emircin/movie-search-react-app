@@ -1,0 +1,23 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+    background-color: #48CAF5;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header-text{
+    font-size: 1.2rem;
+}
+
+.group-element{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    font-weight: 900;
+}
