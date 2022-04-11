@@ -18,7 +18,8 @@ const Navbar = () => {
                     
                     {user ? <p className="group-element">{user.displayName}</p> : <Button variant="contained"><NavLink to='/login' style={{color:"white"}}>Login</NavLink></Button>}
                     {user ? null : <Button variant="contained"><NavLink to='/register' style={{color:"white"}}>Register</NavLink></Button>}
-                    <Button variant="contained" onClick={()=>auth.signOut()}><NavLink to='/'style={{color:"white"}}>Sign Out</NavLink></Button>
+                    {user ? <Button variant="contained" onClick={()=>auth.signOut()}><NavLink to='/'style={{color:"white"}}>Sign Out</NavLink></Button> : null}
+                    
                                    
                 </Stack>
             </div>
